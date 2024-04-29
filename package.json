@@ -4,14 +4,18 @@
   "description": "Welcome to my portfolio website! This project is the result of me to not only showcasing my skills as a Full-stack webdeveloper but also my skills as a Graphic Designer. I hope you enjoy looking through how all of this was built.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve"
+    "start": "npx @11ty/eleventy --serve",
+    "css": "npx postcss input/assets/styles/*.css --dir input/assets/styles/dist --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^2.0.1",
+    "cssnano": "^7.0.1",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-nesting": "^12.1.2"
   }
 }
