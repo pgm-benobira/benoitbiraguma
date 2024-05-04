@@ -12,12 +12,10 @@ title: benoitbiraguma
     </div>
     <div>
         {% include "partials/header.njk" %}
-        <main>
-            <article class="main__inner">
-                <h1 class="dev__title">I’m a Full-stack Web Developer</h1>
-                {{components.button('dev projects', 'button--dev', 'web-development-projects', 'devButton')}}
-            </article>
-        </main>
+        <div class="hero__content">
+            <h1 class="dev__title">I’m a Full-stack Web Developer</h1>
+            {{components.heroButton('dev projects', 'hero__button--dev', 'web-development-projects', 'devButton')}}
+        </div>
     </div>
     {% include "partials/footer.njk" %}
 </section>
@@ -28,12 +26,10 @@ title: benoitbiraguma
     </div>
     {% include "partials/header.njk" %}
     <div>
-        <main>
-            <article class="main__inner">
-                {{components.button('design projects', 'button--designer', 'graphic-design-projects', 'designerButton')}}
-                <h1 class="designer__title">a Graphic Designer.</h1>
-            </article>
-        </main>
+        <div class="hero__content">
+            {{components.heroButton('design projects', 'hero__button--designer', 'graphic-design-projects', 'designerButton')}}
+            <h1 class="designer__title">a Graphic Designer.</h1>
+        </div>
         {% include "partials/footer.njk" %}
     </div>
 </section>

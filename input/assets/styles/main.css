@@ -1,3 +1,9 @@
+/*
+===========================
+GLOBAL STYLES
+===========================
+*/
+
 :root {
     --dark: hsl(209, 20%, 21%);
     --light: hsl(187, 62%, 87%);
@@ -72,11 +78,6 @@ p {
     font-size: 1rem;
 }
 
-.main__inner {
-    padding: 0 9.875rem;
-    margin: 0 auto;
-}
-
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -112,6 +113,7 @@ HOMEPAGE
 ===========================
 */
 
+/* Hero section */
 .hero {
     position: absolute;
     top: 0;
@@ -124,6 +126,7 @@ HOMEPAGE
     overflow: hidden;
 }
 
+/* Hero section (developper) */
 .hero--dev {
     position: relative;
     color: var(--white);
@@ -153,9 +156,10 @@ HOMEPAGE
     }
 }
 
+/* Hero section (designer side) */
 .hero--designer {
     background-color: var(--white);
-    & .main__inner {
+    & .hero__content {
         text-align: right;
     }
     clip-path: polygon(56% 0, 100% 0, 100% 100%, 43% 100%);
@@ -185,7 +189,14 @@ HOMEPAGE
     }
 }
 
-.button {
+/* Hero content */
+.hero__content {
+    padding: 0 9.875rem;
+    margin: 0 auto;
+}
+
+/* Hero button */
+.hero__button {
     display: inline-block;
     max-width: 16rem;
     width: 100%;
@@ -194,7 +205,8 @@ HOMEPAGE
     border: solid 2px var(--primary);
 }
 
-.button--dev {
+/* Hero button (developper) */
+.hero__button--dev {
     margin-top: 3.75rem;
     transition: 0.4s ease-in-out;
     background-color: var(--dark);
@@ -204,7 +216,8 @@ HOMEPAGE
     }
 }
 
-.button--designer {
+/* Hero button (designer) */
+.hero__button--designer {
     margin-bottom: 1.75rem;
     border-color: var(--dark);
     border-radius: 50px;
@@ -216,6 +229,7 @@ HOMEPAGE
     }
 }
 
+/* Animation (designer) */
 .ball-animation {
     z-index: -2;
     position: absolute;
@@ -266,6 +280,7 @@ HOMEPAGE
     }
 }
 
+/* Animation (developper) */
 .code-animation {
     z-index: -2;
     position: absolute;

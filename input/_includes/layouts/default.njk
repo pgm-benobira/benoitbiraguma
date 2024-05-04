@@ -1,15 +1,13 @@
-{% import "components/general.njk" as components %}
-
 {% extends "layouts/base.njk" %}
 
 {% block body %}
     {% include "partials/header.njk" %}
     <main>
-        <article class="main__inner">
+        <div class="main__inner">
             {% block main %}
             {{ content | safe }}
             {% endblock main %}
-        </article>
+        </div>
     </main>
     {% include "partials/footer.njk" %}
 {% endblock body %}
