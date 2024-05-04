@@ -1,11 +1,40 @@
 ---
 title: benoitbiraguma
-tags: navigation
-order: 1
 ---
 
+{% import "components/general.njk" as components %}
 {% extends "layouts/base.njk" %}
 
 {% block body %}
-    <p>Home</p>
+<section class="hero hero--dev">
+    <div class="code-animation">
+        <img src="assets/images/code.svg" class="code">
+    </div>
+    <div>
+        {% include "partials/header.njk" %}
+        <main>
+            <article class="main__inner">
+                <h1 class="dev__title">I’m a Full-stack Web Developer</h1>
+                {{components.button('dev projects', 'button--dev', 'web-development-projects', 'devButton')}}
+            </article>
+        </main>
+    </div>
+    {% include "partials/footer.njk" %}
+</section>
+<section class="hero hero--designer">
+    <div class="ball-animation">
+        <img src="assets/images/ball-1.png" class="ball ball-1">
+        <img src="assets/images/ball-2.png" class="ball ball-2">
+    </div>
+    {% include "partials/header.njk" %}
+    <div>
+        <main>
+            <article class="main__inner">
+                {{components.button('design projects', 'button--designer', 'graphic-design-projects', 'designerButton')}}
+                <h1 class="designer__title">a Graphic Designer.</h1>
+            </article>
+        </main>
+        {% include "partials/footer.njk" %}
+    </div>
+</section>
 {% endblock %}

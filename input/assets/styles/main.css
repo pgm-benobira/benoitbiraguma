@@ -1,0 +1,294 @@
+:root {
+    --dark: hsl(209, 20%, 21%);
+    --light: hsl(187, 62%, 87%);
+    --primary: hsl(187, 84%, 59%);
+    --white: hsl(34, 100%, 99%);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../fonts/Poppins/Poppins-SemiBold.woff2') format('woff2'),
+        url('../../fonts/Poppins/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('../../fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../../fonts/RobotoMono/RobotoMono-Regular.woff2') format('woff2'),
+        url('../../fonts/RobotoMono/RobotoMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kugile';
+    src: url('../../fonts/Kugile/Kugile.woff2') format('woff2'),
+        url('../../fonts/Kugile/Kugile.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background-color: var(--white);
+    position: relative;
+    & *::selection {
+        background-color: var(--primary);
+        color: var(--dark);
+    }
+}
+
+h1 {
+    font-size: 4.25rem;
+    font-weight: normal;
+    line-height: 1.2;
+    &.dev__title {
+        font-family: 'Roboto Mono', monospace;
+        width: 50%;
+    }
+    &.designer__title {
+        font-family: 'Kugile', sans-serif;
+        font-size: 5.75rem;
+        margin-left: auto;
+        width: 50%;
+        position: relative;
+        top: 2rem;
+    }
+}
+
+p {
+    font-size: 1rem;
+}
+
+.main__inner {
+    padding: 0 9.875rem;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+    &:hover {
+        color: var(--primary);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+header {
+    padding-bottom: 3.75rem;
+}
+
+footer {
+    padding-top: 3.75rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.125rem 9.875rem;
+}
+
+/*
+===========================
+HOMEPAGE
+===========================
+*/
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.hero--dev {
+    position: relative;
+    color: var(--white);
+    & a {
+        color: var(--white);
+    } & a:hover {
+        color: var(--primary);
+    } & .button--dev:hover {
+        color: var(--white);
+    }
+    &::after {
+        content: "&";
+        font-size: 9rem;
+        line-height: 0.8;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: var(--dark);
+        z-index: -2;
+    }
+}
+
+.hero--designer {
+    background-color: var(--white);
+    & .main__inner {
+        text-align: right;
+    }
+    clip-path: polygon(56% 0, 100% 0, 100% 100%, 43% 100%);
+    transition: 1.2s ease-in-out;
+    &::after {
+        content: "";
+        background-image: url(../../images/&-Amandine-font.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 6.75rem;
+        width: 6.75rem;
+        position: absolute;
+        top: 50%;
+        right: 49.6%;
+        transform: translate(50%, -50%);
+    }
+    &::before {
+        content: "";
+        background-image: url(../../images/grainy-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+    }
+}
+
+.button {
+    display: inline-block;
+    max-width: 16rem;
+    width: 100%;
+    text-align: center;
+    padding: 1.25rem 2.5rem;
+    border: solid 2px var(--primary);
+}
+
+.button--dev {
+    margin-top: 3.75rem;
+    transition: 0.4s ease-in-out;
+    background-color: var(--dark);
+    &:hover {
+        box-shadow: 0px 0px 25px 5px hsla(187, 100%, 50%, 0.14);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.button--designer {
+    margin-bottom: 1.75rem;
+    border-color: var(--dark);
+    border-radius: 50px;
+    transition: 0.4s ease-in-out;
+    &:hover {
+        border-color: var(--primary);
+        color: var(--dark);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.ball-animation {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100vh;
+    width: 50%;
+    & .ball {
+        position: absolute;
+    }
+    & .ball-1 {
+        width: 75%;
+        top: 10%;
+        left: 22%;
+        opacity: 0.4;
+        animation: float 6s infinite ease-in-out;
+    }
+    & .ball-2 {
+        width: 55%;
+        top: 40%;
+        left: 5%;
+        opacity: 1;
+        animation: floatReverse 4s infinite ease-in-out;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(-1rem);
+    }
+    50% {
+        transform: translateY(8rem);
+    }
+    100% {
+        transform: translateY(-1rem);
+    }
+}
+
+@keyframes floatReverse {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.code-animation {
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42%;
+    opacity: 0.1;
+    & .code {
+        position: absolute;
+        top: 44vh;
+        left: -6rem;
+        animation: float2 6s infinite ease-in-out;
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
