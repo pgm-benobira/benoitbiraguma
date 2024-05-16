@@ -5,7 +5,7 @@ description: 10th edition of the yearly typography challenge, the theme was retr
 
 variant: project--5
 rightSide: true
-image1: background.png
-image3: background.png
-image4: background.png
+video1: 36-days-of-type-a.mp4
+video3: 36-days-of-type-b.mp4
+video4: 36-days-of-type-c.mp4
 ---

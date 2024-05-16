@@ -22,3 +22,6 @@ yarn-error.log*
 # Dependency directories
 bower_components/
 jspm_packages/
+
+# Files larger then 100MB
+input/assets/images/graphic-design/video-explainer.mp4

@@ -4,7 +4,7 @@ title: Artepalooza
 description: 2D animation of Instagram stories for a fictive festival for Artevelde University (After Effects)
 
 variant: project--4
-image1: background.png
-image2: background.png
-image3: background.png
+video1: artepalooza-1.mp4
+video2: artepalooza-2.mp4
+video3: artepalooza-3.mp4
 ---

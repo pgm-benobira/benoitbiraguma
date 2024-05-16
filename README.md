@@ -30,8 +30,8 @@ This portfolio website is built using Eleventy, a static site generator, to show
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/your-repo.git`
-2. Navigate to the project directory: `cd your-repo`
+1. Clone the repository: `git clone https://github.com/pgm-benobira/benoitbiraguma.git`
+2. Navigate to the project directory: `cd benoitbiraguma`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open your browser and go to `http://localhost:8080` to view the website.

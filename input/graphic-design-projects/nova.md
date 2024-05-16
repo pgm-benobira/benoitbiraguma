@@ -1,8 +1,9 @@
 ---
-order: 10
+order: 6
 title: NOVA
 description: Real-world design and animation for the logo of NOVA, an artist management team (Illustrator & After effects)
 
-variant: project--2
-image1: background.png
+variant: project--4
+video1: nova-1.mp4
+video2: nova-2.mp4
 ---
