@@ -1,9 +1,19 @@
 ---
 title: Graphic Design | benoitbiraguma
+theme: grainy
+
+pageTitle: Immerse in my Infinite Creativity
+
+summaryTitle: Mentioned projects
 ---
+{% import "components/general.njk" as components %}
 
 {% extends "layouts/default.njk" %}
 
 {% block main %}
-    <p>Graphic Design</p>
+    {% if pageTitle %}
+        {{ components.pageHeader(pageTitle, headerAnimation) }}
+    {% endif %}
+    {{ components.gallery(collections.gd) }}
+    {{ components.summary(collections.gd, summaryTitle) }}
 {% endblock %}

@@ -1,3 +1,63 @@
+{% import "components/links.njk" as links %}
+
+{# Component for the hero button #}
 {% macro heroButton(label, class, link, id) %}
 <a class="hero__button {{ class }}" href="{{ link }}" id="{{ id }}"><span>{{ label }}</span></a>
+{% endmacro %}
+
+{# Component for the page header #}
+{% macro pageHeader(pageTitle, headerAnimation) %}
+<div class="page-header">
+    <h1 class="page-header__title">{{ pageTitle }}</h1>
+    <div class="page-header__right">
+        {{ links.linkHoverEffect('Go back', '/') }}
+        <img class="page-header__animation" src="/assets/images/{{ headerAnimation }}" alt="looping-animation">
+    </div>
+</div>
+{% endmacro %}
+
+{# Component for the gallery #}
+{% macro gallery(data) %}
+<div class="gallery">
+    {% for project in data | sortByOrder %}
+        <div class="project {{ project.data.variant }}">
+            {% if project.data.image1 %}
+                <div class="project__media project__media--1"><img src="/assets/images/{{ project.data.image1 }}" alt=""></div>
+            {% endif %}
+            {% if project.data.image2 %}
+                <div class="project__media project__media--2"><img src="/assets/images/{{ project.data.image2 }}" alt=""></div>
+            {% endif %}
+            {% if project.data.rightSide %}
+                <div class="project__right">
+                    {% if project.data.image3 %}
+                        <div class="project__media project__media--3"><img src="/assets/images/{{ project.data.image3 }}" alt=""></div>
+                    {% endif %}
+                    {% if project.data.image4 %}
+                        <div class="project__media project__media--4"><img src="/assets/images/{{ project.data.image4 }}" alt=""></div>
+                    {% endif %}
+                </div>
+            {% else %}
+                {% if project.data.image3 %}
+                    <div class="project__media project__media--3"><img src="/assets/images/{{ project.data.image3 }}" alt=""></div>
+                {% endif %}
+                {% if project.data.image4 %}
+                    <div class="project__media project__media--4"><img src="/assets/images/{{ project.data.image4 }}" alt=""></div>
+                {% endif %}
+            {% endif %}
+            
+        </div>
+    {% endfor %}
+</div>
+{% endmacro %}
+
+{# Component for the summary #}
+{% macro summary(data, summaryTitle) %}
+<div class="summary">
+    <p class="summary__title">{{ summaryTitle }}</p>
+    <ul class="summary__content">
+        {% for project in data | sortByOrder %}
+            <li>{{ project.data.title }} - {{ project.data.description }}</li>
+        {% endfor %}
+    </ul>
+</div>
 {% endmacro %}
