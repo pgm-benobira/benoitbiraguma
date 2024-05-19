@@ -4,6 +4,6 @@ title: Löngg magazine
 description: Fictive luxurious magazine with divers news (InDesign)
 
 variant: project--6
-image1: background.png
-image2: background.png
+image1: longg-1.png
+image2: longg-2.png
 ---

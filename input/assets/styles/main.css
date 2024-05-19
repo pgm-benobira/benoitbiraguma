@@ -404,7 +404,7 @@ CONTENT PAGE
 .gallery {
     display: flex;
     flex-direction: column;
-    gap: 3.75rem;
+    gap: 2.8125rem;
     & img {
         width: 100%;
         height: 100%;
@@ -440,7 +440,7 @@ CONTENT PAGE
     & .project--1 {
         display: flex;
         flex-wrap: wrap;
-        gap: 3.75rem;
+        gap: 2.8125rem;
         
         & .project__media--1 {
             width: 65%;
@@ -465,7 +465,7 @@ CONTENT PAGE
     & .project--3 {
         display: flex;
         flex-wrap: wrap;
-        gap: 3.75rem;
+        gap: 2.8125rem;
         & .project__media--1 {
             width: 47%;
         }
@@ -473,7 +473,7 @@ CONTENT PAGE
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 3.75rem;
+            gap: 2.8125rem;
         }
     }
 
@@ -481,7 +481,7 @@ CONTENT PAGE
     & .project--4 {
         display: flex;
         flex-wrap: wrap;
-        gap: 3.75rem;
+        gap: 2.8125rem;
         & .project__media--1 {
             width: 30%;
         }
@@ -495,7 +495,7 @@ CONTENT PAGE
     & .project--5 {
         display: flex;
         flex-wrap: wrap;
-        gap: 3.75rem;
+        gap: 2.8125rem;
         & .project__media--1 {
             width: 65%;
         }
@@ -503,7 +503,7 @@ CONTENT PAGE
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 3.75rem;
+            gap: 2.8125rem;
         }
     }
 
@@ -511,7 +511,7 @@ CONTENT PAGE
     & .project--6 {
         display: flex;
         flex-wrap: wrap;
-        gap: 3.75rem;
+        gap: 2.8125rem;
         & .project__media--1 {
             width: 47%;
         }

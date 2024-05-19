@@ -5,5 +5,4 @@ description: School minor in 2D animation about a personal passion (After Effect
 
 variant: project--2
 video1: me-myself-and-i.mp4
-unmuteButton1: true
 ---
