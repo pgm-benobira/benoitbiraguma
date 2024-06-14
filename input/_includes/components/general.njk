@@ -18,9 +18,9 @@
 
 {# Component for the gallery #}
 {% macro gallery(data) %}
-<div class="gallery">
+<div class="gallery" id="gallery">
     {% for project in data | sortByOrder %}
-        <div class="project {{ project.data.variant }}">
+        <div class="project {{ project.data.variant }}" id="project">
             {% if project.data.image1 %}
                 <div class="project__media project__media--1"><img src="/assets/images/graphic-design/{{ project.data.image1 }}" alt="gallery-image"></div>
             {% endif %}
