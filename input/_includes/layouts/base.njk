@@ -9,10 +9,14 @@
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
+    <div id="loadingScreen">
+        <div class="loader"></div>
+    </div>
     <div class="body__inner {{ theme }}">
         {% block body %}
             {{ content | safe }}
         {% endblock body %}
     </div>
+    <script src="/assets/scripts/loadingPage.js"></script>
 </body>
 </html>
