@@ -67,7 +67,7 @@ body {
 .grainy {
     &::before {
         content: "";
-        background-image: url(../../images/grainy-background.png);
+        background-image: url(../../images/grainy-background.webp);
         background-size: contain;
         height: 100%;
         width: 100%;
@@ -286,7 +286,7 @@ HOMEPAGE
     }
     &::before {
         content: "";
-        background-image: url(../../images/grainy-background.png);
+        background-image: url(../../images/grainy-background.webp);
         background-size: cover;
         background-repeat: no-repeat;
         height: 100%;

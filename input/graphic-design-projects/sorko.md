@@ -7,5 +7,5 @@ variant: project--3
 rightSide: true
 video1: sorko-1.mp4
 video3: sorko-2.mp4
-image4: sorko-3.png
+image4: sorko-3.webp
 ---

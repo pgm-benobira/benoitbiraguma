@@ -5,7 +5,7 @@ description: Real-world branding of my own clothing brand inspired by Japanese c
 
 variant: project--5
 rightSide: true
-image1: genki-2.jpg
-image3: genki-1.jpg
-image4: genki-3.png
+image1: genki-2.webp
+image3: genki-1.webp
+image4: genki-3.webp
 ---
