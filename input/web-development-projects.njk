@@ -1,10 +1,17 @@
 ---
 title: Web Development | benoitbiraguma
 theme: dark
+
+pageTitle: Inventive Innovation of a Tech Geek
 ---
+{% import "components/general.njk" as components %}
 
 {% extends "layouts/default.njk" %}
 
 {% block main %}
-    <p>Web Development</p>
+    {% if pageTitle %}
+        {{ components.pageHeader(pageTitle, headerAnimation) }}
+    {% endif %}
+    {{ components.webProjects(collections.wd) }}
+    <script src="/assets/scripts/fadeProjects.js"></script>
 {% endblock %}
