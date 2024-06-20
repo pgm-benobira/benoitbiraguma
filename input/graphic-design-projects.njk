@@ -3,6 +3,7 @@ title: Graphic Design | benoitbiraguma
 theme: grainy
 
 pageTitle: Immerse in my Infinite Creativity
+pageIcon: infinite
 
 summaryTitle: Mentioned projects
 ---
@@ -12,7 +13,7 @@ summaryTitle: Mentioned projects
 
 {% block main %}
     {% if pageTitle %}
-        {{ components.pageHeader(pageTitle, headerAnimation) }}
+        {{ components.pageHeader(pageTitle, pageIcon) }}
     {% endif %}
     {{ components.gallery(collections.gd) }}
     {{ components.summary(collections.gd, summaryTitle) }}

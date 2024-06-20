@@ -6,12 +6,12 @@
 {% endmacro %}
 
 {# Component for the page header #}
-{% macro pageHeader(pageTitle, headerAnimation) %}
+{% macro pageHeader(pageTitle, pageIcon) %}
 <div class="page-header">
     <h1 class="page-header__title">{{ pageTitle }}</h1>
     <div class="page-header__right">
         {{ links.linkHoverEffect('Go back', '/') }}
-        <img class="page-header__animation" src="/assets/images/infinite.svg" alt="looping-animation">
+        <img class="page-header__icon" src="/assets/images/{{ pageIcon }}.svg" alt="page-icon">
     </div>
 </div>
 {% endmacro %}

@@ -10,13 +10,17 @@
 </head>
 <body class="{{ theme }}">
     <div class="body__inner">
-        <div id="loadingScreen">
-            <div class="loader"></div>
+        <div class="loader__container" id="loadingScreen">
+            <div class="loader">
+                <img class="loader__animation" src="/assets/images/loader.gif">
+                <p class="loader__message" id="loadingMessage">Loading your experience...</p>
+            </div>
         </div>
         {% block body %}
             {{ content | safe }}
         {% endblock body %}
     </div>
     <script src="/assets/scripts/loadingPage.js"></script>
+    <script src="/assets/scripts/messages.js"></script>
 </body>
 </html>
