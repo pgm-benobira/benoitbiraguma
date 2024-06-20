@@ -72,20 +72,6 @@ body {
     background-color: var(--dark);
 }
 
-/* Light theme with grainy background */
-.grainy {
-    &::before {
-        content: "";
-        background-image: url(../../images/grainy-background.webp);
-        background-size: contain;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.4;
-    }
-}
-
 h1 {
     font-size: 4.25rem;
     font-weight: normal;
@@ -368,17 +354,6 @@ HOMEPAGE
             height: 4.5rem;
             width: 4.5rem;
         }
-    }
-    &::before {
-        content: "";
-        background-image: url(../../images/grainy-background.webp);
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: -1;
-        opacity: 0.4;
     }
 }
 
