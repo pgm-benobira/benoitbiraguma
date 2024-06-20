@@ -10,5 +10,5 @@ projectTags:
     - React-Router
     - SEO
     - CSS-modules
-thumbnail: pgm-platform.png
+thumbnail: pgm-platform.webp
 ---

@@ -1,14 +1,20 @@
 ---
 order: 2
 title: Studentvolgsysteem
-description: For the final project of the Programming 4 course, I developed a comprehensive platform tailored for the Associate Degree in Programming. This platform showcases portfolios from various programming tracks, offering a detailed insight into the work and achievements of our students. The target audience includes prospective students, current students, alumni, industry professionals, and other interested parties.
-live: https://pgm-platform-pgm-benobira.onrender.com/
-repo: https://github.com/pgm-benobira/pgm-platform
+description: The Studentvolgsysteem project is designed to track and manage student progress using various technologies. It integrates Handlebars, PostgreSQL, SQLite3, JWT, Express.js, Knex.js, Objection.js, and PDFKit, making it a robust solution for educational institutions.
+live: 
+repo: https://github.com/pgm-benobira/student-volgsysteem
 projectTags:
-    - React
-    - Hygraph
-    - React-Router
-    - SEO
-    - CSS-modules
-thumbnail: pgm-platform.png
+    - Handlebars
+    - PostgreSQL
+    - SQLite3
+    - JWT
+    - Express.js
+    - Knex.js
+    - Objection.js
+    - PDFKit
+    - CSS
+    - JavaScript
+    - HTML
+thumbnail: studentvolgsysteem.webp
 ---

@@ -67,6 +67,11 @@ body {
     }
 }
 
+/* Dark background */
+.dark-background {
+    background-color: var(--dark);
+}
+
 /* Light theme with grainy background */
 .grainy {
     &::before {
@@ -757,7 +762,7 @@ CONTENT PAGE
         & .web_project__tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.875rem;
+            gap: 1.25rem;
             color: var(--primary);
         }
     }
