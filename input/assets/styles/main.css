@@ -260,16 +260,23 @@ LOADING ANIMATION
         & .loader__animation {
             max-width: 16rem;
             width: 100%;
+            @media (max-width: 48rem) {
+                max-width: 8rem;
+            }
         }
         & .loader__message {
             width: 100%;
-            padding: 0 1.875rem;
+            padding: 0 3.75rem;
             text-align: center;
             font-size: 1.4rem;
             position: absolute;
             top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
+            @media (max-width: 48rem) {
+                font-size: 1rem;
+                top: 70%;
+            }
         }
     }
 }
