@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 9
 title: Sorko
 description: UI/UX of a mobile app to help students in dorms sort and manage waste made for my bachelor’s thesis (Adobe XD)
 

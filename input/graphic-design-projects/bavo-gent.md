@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 7
 title: BAVO Gent
 description: Full rebranding of an abbey beer from Ghent from logo to marketing (Illustrator & InDesign)
 

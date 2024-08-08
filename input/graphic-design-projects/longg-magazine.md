@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 2
 title: Löngg magazine
 description: Fictive luxurious magazine with divers news (InDesign)
 

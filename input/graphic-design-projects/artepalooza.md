@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 6
 title: Artepalooza
 description: 2D animation of Instagram stories for a fictive festival for Artevelde University (After Effects)
 

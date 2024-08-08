@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 3
 title: 36 Days of Type
 description: 10th edition of the yearly typography challenge, the theme was retro Game Boy games (Aseprite)
 

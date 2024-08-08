@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, {
   root: null, // viewport
   rootMargin: '0px',
-  threshold: 0.1 // adjust this if you want the projects to be shown earlier or later
+  threshold: 0.1
 });
 
 // For each project, observe it with the Intersection Observer

@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 8
 title: Me, myself and I
 description: School minor in 2D animation about a personal passion (After Effects)
 

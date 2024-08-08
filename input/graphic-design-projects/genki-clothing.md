@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 1
 title: Genki-Clothing
 description: Real-world branding of my own clothing brand inspired by Japanese culture (Illustrator & Photoshop)
 

@@ -1,7 +1,7 @@
 ---
-order: 1
-title: PGM Platform
-description: For the final project of the Programming 4 course, I developed a comprehensive platform tailored for the Associate Degree in Programming. This platform showcases portfolios from various programming tracks, offering a detailed insight into the work and achievements of our students. The target audience includes prospective students, current students, alumni, industry professionals, and other interested parties.
+order: 8
+title: PGM Platform - React Website
+description: For my final Programming 4 project, I developed the PGM Platform, a comprehensive website designed for the Graduate Program in Programming. The platform aims to serve prospective students, current students, alumni, and industry professionals by providing a detailed showcase of the program's offerings and portfolios. The platform incorporates search functionality and allows users to switch between light and dark modes for a customized viewing experience. Built using React with Context API for state management and React Router DOM for client-side routing, the frontend is styled with CSS Modules (SASS). The backend is managed through GraphCMS/Hygraph as a Backend as a Service (BAAS), and the application is deployed automatically via GitHub Actions to Render.com. This project exemplifies my skills in creating a modern, responsive, and SEO-optimized web platform.
 live: https://pgm-platform-pgm-benobira.onrender.com/
 repo: https://github.com/pgm-benobira/pgm-platform
 projectTags:
