@@ -25,6 +25,7 @@ This portfolio website is built using Eleventy, a static site generator, to show
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Hygraph](https://hygraph.com/)
 
 ## Setup
 
@@ -35,6 +36,8 @@ To run this project locally, follow these steps:
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
 5. Open your browser and go to `http://localhost:8080` to view the website.
+
+Please note that the projects will be missing from this version, as they are now hosted on Hygraph and the link for the content API is not publicly available. You can add you own projects locally or fetch from your Hygraph project. The hygraph.js gives an insight of what your models should look like in Hygraph.
 
 ## Usage
 

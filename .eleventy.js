@@ -1,8 +1,18 @@
+const fetchData = require('./input/_data/hygraph.js');
+
 module.exports = function(eleventyConfig) {
+    eleventyConfig.addGlobalData('webDevelopmentProjects', async () => {
+        const data = await fetchData();
+        return data.webDevelopmentProjects;
+    });
+
+    eleventyConfig.addGlobalData('graphicDesignProjects', async () => {
+        const data = await fetchData();
+        return data.graphicDesignProjects;
+    });
+
     eleventyConfig.addPassthroughCopy("input/assets");
-    eleventyConfig.addFilter("sortByOrder", (list) => {
-        return list.sort((a, b) => b.data.order - a.data.order);
-    })
+
     return {
         dir: {
             input: "input",
