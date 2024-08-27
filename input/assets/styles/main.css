@@ -494,7 +494,6 @@ HOMEPAGE
         position: absolute;
         top: 44vh;
         left: -6rem;
-        min-width: 15rem;
         animation: float2 6s infinite ease-in-out;
     }
 }
@@ -757,6 +756,25 @@ CONTENT PAGE
             flex-wrap: wrap;
             gap: 1.25rem;
             color: var(--primary);
+        }
+    }
+}
+
+/*
+===========================
+ABOUT PAGE
+===========================
+*/
+
+.about {
+    & .about__intro {
+        padding-bottom: 1rem;
+    }
+    & .about__icon {
+        display: inline-flex;
+        max-height: 3rem;
+        @media (max-width: 62rem) {
+            max-height: 2.5rem;
         }
     }
 }
