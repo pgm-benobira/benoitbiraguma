@@ -70,6 +70,26 @@ async function fetchWebDevelopmentProjects() {
     return response.webDevelopmentProjects;
 }
 
+async function fetchProjectTags() {
+    const query = `{
+        projectTags(orderBy: title_ASC, first: 50) {
+            title
+        }
+    }`;
+    const response = await fetchAPI(query);
+    return response.projectTags;
+}
+
+async function fetchDesignSkills() {
+    const query = `{
+        designSkills(orderBy: title_ASC, first: 50) {
+            title
+        }
+    }`;
+    const response = await fetchAPI(query);
+    return response.designSkills;
+}
+
 async function fetchAPI(query) {
     const response = await fetch(process.env.HYGRAPH_CONTENT_API, {
         method: "POST",
@@ -86,5 +106,7 @@ async function fetchAPI(query) {
 module.exports = async function() {
     const graphicDesignProjects = await fetchGraphicDesignProjects();
     const webDevelopmentProjects = await fetchWebDevelopmentProjects();
-    return { graphicDesignProjects, webDevelopmentProjects };
+    const projectTags = await fetchProjectTags();
+    const designSkills = await fetchDesignSkills();
+    return { graphicDesignProjects, webDevelopmentProjects, projectTags, designSkills };
 };

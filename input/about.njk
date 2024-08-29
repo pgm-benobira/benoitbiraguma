@@ -4,12 +4,43 @@ description: Endlessly Creative, Tech-Savvy and Communicative. Learn more about 
 ---
 
 {% extends "layouts/default.njk" %}
+{% import "components/links.njk" as links %}
 
 {% block main %}
 <section class="about">
-    <p class="about__intro">Let's keep it short?</p>
-    <h1>Endlessly Creative <img class="about__icon" src="/assets/images/infinite.svg" alt="infinite">,</h1>
-    <h1>Tech-Savvy <img class="about__icon" src="/assets/images/tech-geek.svg" alt="geek"> and</h1>
-    <h1>Communicative <img class="about__icon" src="/assets/images/communicative.svg" alt="communicative"></h1>
+    <div class="about__header">
+        <p class="about__intro">Let's keep it short?</p>
+        {{ links.linkHoverEffect('Go back', '/') }}
+    </div>
+    <div class="about__tagline">
+        <p>I'm a Graphic Designer and</p>
+        <p>a Full-stack Web Developer</p>
+        <p>I'm Endlessly Creative <img class="about__icon" src="/assets/images/infinite.svg" alt="infinite">,</p>
+        <p>Tech-Savvy <img class="about__icon" src="/assets/images/tech-geek.svg" alt="geek"> and</p>
+        <p>Communicative <img class="about__icon" src="/assets/images/communicative.svg" alt="communicative"></p>
+    </div>
+</section>
+<section class="socials">
+    {{ links.socialLink('https://www.linkedin.com/in/beno%C3%AEt-biraguma-48422a194/', 'LinkedIn') }}
+    {{ links.socialLink('https://www.instagram.com/benoitbiraguma/', 'Instagram') }}
+    {{ links.socialLink('https://github.com/pgm-benobira', 'GitHub') }}
+</section>
+<section class="skills__wrapper">
+    <section class="skills">
+        <p class="skills__title">Developper Technical Toolbox</p>
+        <ul class="skills__content">
+            {% for projectTag in projectTags %}
+                <li>{{ projectTag.title }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    <section class="skills">
+        <p class="skills__title">Creative Software Suite</p>
+        <ul class="skills__content">
+            {% for designSkill in designSkills %}
+                <li>{{ designSkill.title }}</li>
+            {% endfor %}
+        </ul>
+    </section>
 </section>
 {% endblock %}

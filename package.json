@@ -19,6 +19,7 @@
     "postcss-nesting": "^12.1.2"
   },
   "dependencies": {
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "dotenv": "^16.4.5",
     "node-fetch": "^3.3.2"
   }

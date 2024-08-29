@@ -21,3 +21,11 @@
     <svg class="repo-link__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.557 21.025"><path fill="#3fd9ee" d="M10.778 0A10.779 10.779 0 0 0 7.37 21c.539.094.741-.229.741-.512 0-.256-.013-1.1-.013-2.007-2.708.5-3.409-.66-3.624-1.266a3.919 3.919 0 0 0-1.1-1.522c-.377-.2-.916-.7-.013-.714a2.157 2.157 0 0 1 1.657 1.1 2.3 2.3 0 0 0 3.139.889 2.267 2.267 0 0 1 .687-1.442c-2.4-.269-4.9-1.2-4.9-5.322a4.2 4.2 0 0 1 1.1-2.9 3.873 3.873 0 0 1 .103-2.844s.9-.283 2.964 1.1a10.162 10.162 0 0 1 5.389 0c2.061-1.4 2.964-1.1 2.964-1.1a3.873 3.873 0 0 1 .108 2.856 4.17 4.17 0 0 1 1.1 2.9c0 4.136-2.519 5.052-4.918 5.322a2.552 2.552 0 0 1 .728 1.994c0 1.442-.013 2.6-.013 2.964 0 .283.2.62.741.512A10.784 10.784 0 0 0 10.778 0Z" data-name="Icon akar-github-fill"/></svg>
 </a>
 {% endmacro %}
+
+{# Component for the live link #}
+{% macro socialLink(link, social) %}
+<a class="live-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+    <span class="live-link__label">{{ social }}</span>
+    <svg class="live-link__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.858 16.704"><path fill="none" stroke="#3fd9ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8.352h15.858M9.92 1.414l6.938 6.938L9.92 15.29" data-name="Icon akar-arrow-up"/></svg>
+</a>
+{% endmacro %}
