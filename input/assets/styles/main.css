@@ -782,7 +782,10 @@ ABOUT PAGE
             font-weight: normal;
             line-height: 1.4;
             @media (max-width: 80rem) {
-                font-size: 1.7rem;
+                font-size: 2.8rem;
+            }
+            @media (max-width: 48rem) {
+                font-size: 1.3rem;
             }
         }
     }
@@ -792,7 +795,10 @@ ABOUT PAGE
         position: relative;
         top: 0.3rem;
         @media (max-width: 80rem) {
-            max-height: 1.7rem;
+            max-height: 2.7rem;
+        }
+        @media (max-width: 48rem) {
+            max-height: 1.2rem;
         }
     }
 }
@@ -812,6 +818,9 @@ ABOUT PAGE
     gap: 7.5rem;
     @media (max-width: 62rem) {
         gap: 3.75rem;
+    }
+    @media (max-width: 48rem) {
+        gap: 1.875rem;
     }
 }
 
