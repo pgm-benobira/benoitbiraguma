@@ -56,6 +56,7 @@ async function fetchWebDevelopmentProjects() {
             order
             live
             repo
+            recording
             projectTag {
                 title
             }

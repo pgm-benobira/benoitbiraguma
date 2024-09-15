@@ -107,6 +107,9 @@
                         {% if project.live %}
                             {{ links.liveLink(project.live) }}
                         {% endif %}
+                        {% if project.recording %}
+                            {{ links.recordingLink(project.recording) }}
+                        {% endif %}
                         {% if project.repo %}
                             {{ links.repoLink(project.repo) }}
                         {% endif %}

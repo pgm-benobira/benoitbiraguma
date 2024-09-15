@@ -22,10 +22,18 @@
 </a>
 {% endmacro %}
 
-{# Component for the live link #}
+{# Component for the social link #}
 {% macro socialLink(link, social) %}
 <a class="live-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
     <span class="live-link__label">{{ social }}</span>
     <svg class="live-link__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.858 16.704"><path fill="none" stroke="#3fd9ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8.352h15.858M9.92 1.414l6.938 6.938L9.92 15.29" data-name="Icon akar-arrow-up"/></svg>
+</a>
+{% endmacro %}
+
+{# Component for the recording link #}
+{% macro recordingLink(link) %}
+<a class="recording-link" href="{{ link }}" target="_blank" rel="noopener noreferrer">
+    <span class="recording-link__label">recording</span>
+    <svg class="recording-link__svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path fill="#3fd9ee" fill-rule="evenodd" d="M2 9a4 4 0 0 1 4-4h7a4 4 0 0 1 4 4v.072l3.202-1.84A1.2 1.2 0 0 1 22 8.271v7.477a1.2 1.2 0 0 1-1.694 1.093l-3.32-1.5A4 4 0 0 1 13 19H6a4 4 0 0 1-4-4V9Zm15 4.154 3 1.356V9.654l-3 1.725v1.775ZM15 9a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V9Z" clip-rule="evenodd"/></svg>
 </a>
 {% endmacro %}
