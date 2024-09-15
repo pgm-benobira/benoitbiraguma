@@ -575,10 +575,12 @@ CONTENT PAGE
     gap: 2.8125rem;
     & .project {
         opacity: 0;
-        transition: opacity 1s;
+        transform: translateY(2rem);
+        transition: opacity 1s, transform 1s;
     }
     & .project.visible {
         opacity: 1;
+        transform: translateY(0);
     }
     & img {
         width: 100%;
@@ -777,21 +779,14 @@ ABOUT PAGE
     & .about__tagline {
         display: flex;
         flex-direction: column;
+        width: 100%;
         & p {
             display: flex;
             gap: .9375rem;
             align-items: center;
-            font-size: 4.25rem;
+            font-size: clamp(1rem, 5vw, 4.2rem);
             font-weight: normal;
             line-height: 1.4;
-            @media (max-width: 80rem) {
-                gap: .625rem;
-                font-size: 2.8rem;
-            }
-            @media (max-width: 48rem) {
-                gap: .3125rem;
-                font-size: 1.3rem;
-            }
         }
     }
     & .about__icon {
