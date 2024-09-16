@@ -516,6 +516,7 @@ HOMEPAGE
     }
 }
 
+/* Hero image */
 .hero__image {
     position: absolute;
     z-index: -1;
@@ -528,17 +529,17 @@ HOMEPAGE
 }
 
 .wd-image {
-    max-width: 95%;
+    max-width: 55vw;
     width: 100%;
-    bottom: -15%;
-    right: -28%;
+    bottom: 2vh;
+    right: -6vw;
 }
 
 .gd-image {
-    max-width: 45%;
+    max-width: 38vw;
     width: 100%;
-    top: -10%;
-    left: 0;
+    top: 8vh;
+    left: 5vw;
 }
 
 /*
