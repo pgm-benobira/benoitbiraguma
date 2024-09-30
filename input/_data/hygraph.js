@@ -57,7 +57,7 @@ async function fetchWebDevelopmentProjects() {
             live
             repo
             recording
-            projectTag {
+            projectTags {
                 title
             }
             thumbnail {
